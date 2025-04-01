@@ -1,0 +1,75 @@
+/* Genel Sayfa Stili */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;  /* Arka plan rengini daha açık bir tona değiştirdim */
+    color: #333;  /* Yazı rengini daha okunabilir yapmak için koyu gri yaptım */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Stili */
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;  /* Header ile içerik arasına boşluk ekledim */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti ekledim */
+}
+
+header h1 {
+    margin: 0;  /* Başlık etrafındaki boşluğu sıfırladım */
+    font-size: 2.5em;  /* Başlık boyutunu büyüttüm */
+}
+
+/* Profil Fotoğrafı */
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 4px solid #48afd8; /* Fotoğrafın etrafına ince bir çerçeve ekledim */
+}
+
+/* Bölüm Stili */
+section {
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    display: inline-block;
+    width: 80%;
+    max-width: 900px;  /* Bölüm genişliğini sınırladım */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti ekledim */
+}
+
+/* Bağlantı Stili */
+a {
+    color: #48afd8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #2980b9;  /* Bağlantıya hover efekti ekledim */
+}
+
+/* Responsive Tasarım (Mobil uyumluluk için) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;  /* Küçük ekranlar için font boyutunu düşürdüm */
+    }
+
+    header h1 {
+        font-size: 2em;  /* Başlık boyutunu küçülttüm */
+    }
+
+    section {
+        width: 95%;  /* Bölüm genişliğini daha küçük ekranlar için ayarladım */
+    }
+
+    img {
+        width: 120px;  /* Profil fotoğrafını küçük ekranlarda biraz daha küçülttüm */
+        height: 120px;
+    }
+}
